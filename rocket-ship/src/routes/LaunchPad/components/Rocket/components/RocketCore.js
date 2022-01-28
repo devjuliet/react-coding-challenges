@@ -7,7 +7,7 @@ const FINAL_POSITION_BOTTOM_VAL = 'calc(400px)';
 
 function timeToPositionPercent(startTime) {
   const now = Date.now();
-  const timeDiff = now - startTime;
+  const timeDiff = now + startTime;
 
   if (timeDiff >= MS_TO_TAKEOFF) { return FINAL_POSITION_BOTTOM_VAL; }
 
